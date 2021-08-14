@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Calendar</title>
+</head>
+
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th id="prev">&laquo;</th>
+				<th id="title" colspan="5">2021/08</th>
+				<th id="next">&raquo;</th>
+			</tr>
+			<tr>
+				<th>Sun</th>
+				<th>Mon</th>
+				<th>Tue</th>
+				<th>Wed</th>
+				<th>Thu</th>
+				<th>Fri</th>
+				<th>Sat</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+		<tfoot>
+			<tr>
+				<th id="today" colspan="7">today</th>
+			</tr>
+		</tfoot>
+	</table>
+	</table>
+	<input type="date" id="date">
+	<input type="radio" name="theme" value="light" id="rd1"><label for="rd1">Light</label>
+	<input type="radio" name="theme" value="dark" id="rd2"><label for="rd2">dark</label>
+	<input type="radio" name="theme" value="blue" id="rd3"><label for="rd3">blue</label>
+	<a href="javascript:void(0)" id="test1">テスト</a>
+	<p>これは、<span class="copynum">CSS</span>テストです。</p>
+	<textarea id="textarea"></textarea>
+	<button id="copybtn" class="btn">コピー</button>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

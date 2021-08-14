@@ -1,0 +1,90 @@
+:root{
+	--bg-color:#fff;
+	--text-color:#000;
+	--border-color:#eee;
+}
+
+[data-theme="dark"]{
+	--bg-color:#222;
+	--text-color:#fff;
+	--border-color:#666;
+}
+
+[data-theme="blue"]{
+	--bg-color:hsl(200,80%,80%);
+	--text-color:#000;
+	--border-color:hsl(200,60%,60%);
+}
+
+body{
+	font-family:'Courier New', Courier, monospace;
+	background-color:var(--bg-color);
+}
+table{
+	border-collapse:collapse;
+	border:2px solid var(--border-color);
+}
+
+thead,
+tfoot{
+	background:var(--border-color);
+}
+
+th,td{
+	color:var(--text-color);
+	padding:8px;
+	text-align:center;
+}
+
+tbody td:first-child{
+	color:red;
+}
+
+tbody td:last-child{
+	color:blue;
+}
+
+tfoot{
+	font-weight:bold;
+}
+
+td.disabled{
+	opacity:0.3;
+}
+td.today{
+	font-weight:bold;
+}
+
+#prev,
+#next,
+#today{
+	cursor:pointer;
+	user-select:none;
+}
+
+label{
+	color:var(--text-color);
+}
+
+.copynum {
+	display: inline-block;
+	padding-bottom: 1px;
+	position: relative;
+  }
+  
+  .copynum::after {
+	background-color: yellow;
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 4px;
+	left: 0;
+	position: absolute;
+	transition: .5s all;
+	width: 0;
+	opacity:.6;
+  }
+  
+  .copynum:hover::after {
+	width: 100%;
+  }
