@@ -2,6 +2,7 @@
 	--bg-color:#fff;
 	--text-color:#000;
 	--border-color:#eee;
+	height:100%;
 }
 
 [data-theme="dark"]{
@@ -21,23 +22,27 @@ body{
 	background-color:var(--bg-color);
 	display:flex;
 	flex-direction:column;
+	height:100%;
+	margin:0;
+	padding:0;
 }
 
 header{
 	background:hsl(180,60%,50%);
-	width:100%;
-	height:32px;
 	color:gray;
 }
 
-.container{
+.content{
 	width:80%;
 	margin: 16px auto;
+	flex:1;
 }
 
 footer{
 	background:#333;
 	color:#fff;
+	text-align:center;
+	line-height:32px;
 }
 
 table{
