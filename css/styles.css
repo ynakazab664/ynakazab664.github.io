@@ -17,7 +17,7 @@
 }
 
 body{
-	font-family:'Courier New', Courier, monospace;
+	font-family: arial;
 	background-color:var(--bg-color);
 	display:flex;
 	flex-director:column;
